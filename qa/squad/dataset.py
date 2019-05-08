@@ -9,6 +9,7 @@ from allennlp.data.token_indexers import SingleIdTokenIndexer
 from allennlp.data.tokenizers import WordTokenizer
 from overrides import overrides
 import json
+from pathlib import Path
 
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
