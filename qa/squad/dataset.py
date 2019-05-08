@@ -57,7 +57,9 @@ class SquadReader(DatasetReader):
             is_train = False
 
         # if `file_path` is a URL, redirect to the cache
-        file_path = cached_path(file_path)
+        # file_path = cached_path(file_path)
+        PYTORCH_PRETRAINED_RNET_CACHE = Path(os.environ['PYTORCH_PRETRAINED_RNET_CACHE'])
+        file_path = PYTORCH_PRETRAINED_RNET_CACHE
 
         logger.info("Reading file at %s", file_path)
         with open(file_path) as dataset_file:
