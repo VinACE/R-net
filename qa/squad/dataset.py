@@ -10,6 +10,7 @@ from allennlp.data.tokenizers import WordTokenizer
 from overrides import overrides
 import json
 from pathlib import Path
+import os
 
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
