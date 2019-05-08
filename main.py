@@ -2,7 +2,8 @@ import argparse
 import datetime
 from pathlib import Path
 
-from allennlp.commands import main, Subcommand
+# from allennlp.commands import main, Subcommand
+from allennlp.commands.subcommand import main, Subcommand
 from allennlp.commands.train import train_model
 from allennlp.common import Params
 from allennlp.common.util import import_submodules
