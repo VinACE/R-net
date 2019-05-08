@@ -115,12 +115,12 @@ local bidirectional = true;
   },
 
   trainer: {
-    num_epochs: 120,
+    num_epochs: 2,
     num_serialized_models_to_keep: 5,
     grad_norm: 5.0,
     patience: 10,
     validation_metric: '+f1',
-    cuda_device: [-1],
+    cuda_device: [0],
     learning_rate_scheduler: {
       type: 'reduce_on_plateau',
       factor: 0.5,
